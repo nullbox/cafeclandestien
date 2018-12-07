@@ -1,85 +1,85 @@
 class {
   onCreate() {
     this.state = {
-      step: '',
+      step: "",
       selection: []
-    }
+    };
 
     this.levelOne = [
-      'Basispas',
-      'Achterlangs',
-      'Blok',
-      'Oversteek',
-      'Solo',
-      'InUit',
-      'Uitleg: Spanning en beat',
-      'Gekruist Block',
-      'Voorlangs',
-      'Inrol',
-      'Twist',
-      'Toupie',
-      'Sjaal',
-      'Gekruiste Inrol Uit',
-      'Passage Hoog Uit',
-      'Zweepslag',
-      'Ketting'
-    ]
+      "Basispas",
+      "Achterlangs",
+      "Blok",
+      "Oversteek",
+      "Solo",
+      "InUit",
+      "Uitleg: Spanning en beat",
+      "Gekruist Block",
+      "Voorlangs",
+      "Inrol",
+      "Twist",
+      "Toupie",
+      "Sjaal",
+      "Gekruiste Inrol Uit",
+      "Passage Hoog Uit",
+      "Zweepslag",
+      "Ketting"
+    ];
 
-    this.state.selection = this.levelOne
-
-    this.levelTwo = [
-      'Gekruiste Inrol Halve Draai',
-      'Dubbel Voorlangs',
-      'Inrol Halve Draai',
-      'Jojo',
-      'Espagnol',
-      'Passage Stand Solo',
-      'Passage Stand Ketting',
-      'Passage Stand Gekruiste Inrol',
-      'Passage Stand Gekruiste Sjaal',
-      'In Halve Draai',
-      'Koentje',
-      'Kurketrekker',
-      'Frisbee',
-      'Lijnwissel (3 stuks)'
-    ]
+    this.state.selection = this.levelOne;
 
     this.levelTwo = [
-      'In Uit 10',
-      'In Uit 10 Halve Draai',
-      'Block 10',
-      'Passage 10',
-      'Kaats 10',
-      'Passage Draai Heer',
-      'In Halve Draai Direct Uit',
-      'Triple',
-      'Triple Jojo',
-      'Triple Variaties',
-      'Bump',
-      'Clandestien Special',
-      'Flip',
-      'Spin',
-      'Molenwiek',
-      'Knip',
-      'Valheer'
-    ]
+      "Gekruiste Inrol Halve Draai",
+      "Dubbel Voorlangs",
+      "Inrol Halve Draai",
+      "Jojo",
+      "Espagnol",
+      "Passage Stand Solo",
+      "Passage Stand Ketting",
+      "Passage Stand Gekruiste Inrol",
+      "Passage Stand Gekruiste Sjaal",
+      "In Halve Draai",
+      "Koentje",
+      "Kurketrekker",
+      "Frisbee",
+      "Lijnwissel (3 stuks)"
+    ];
 
-    this.nextStep()
-    this.timer()
+    this.levelTwo = [
+      "In Uit 10",
+      "In Uit 10 Halve Draai",
+      "Block 10",
+      "Passage 10",
+      "Kaats 10",
+      "Passage Draai Heer",
+      "In Halve Draai Direct Uit",
+      "Triple",
+      "Triple Jojo",
+      "Triple Variaties",
+      "Bump",
+      "Clandestien Special",
+      "Flip",
+      "Spin",
+      "Molenwiek",
+      "Knip",
+      "Valheer"
+    ];
+
+    this.nextStep();
+    this.timer();
   }
 
   nextStep() {
     this.state.step = this.state.selection[
       Math.trunc(Math.random() * this.state.selection.length)
-    ]
+    ];
   }
 
   timer() {
-    clearTimeout(this.timeout)
+    clearTimeout(this.timeout);
     this.timeout = setTimeout(() => {
-      this.nextStep()
-      this.timer()
-    }, 2000)
+      this.nextStep();
+      this.timer();
+    }, 2000);
   }
 }
 
