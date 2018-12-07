@@ -1,3 +1,20 @@
+# OS
+*.swp
+.DS_Store
+
+# Editor Configs
+.idea
+.vscode
+*.sublime*
+
+# Generated Files
+dist
+.cache
+.nyc-output
+*.marko.js
+.marko-cli
+.marko-devtools
+
 # Logs
 logs
 *.log
