@@ -1,7 +1,7 @@
 {
-  "name": "cafeclandestien",
+  "name": "stepronome",
   "version": "1.0.0",
-  "description": "",
+  "description": "Stepronome, metronome combined with a step generator",
   "main": "server.js",
   "repository": {
     "type": "git",

@@ -1,0 +1,33 @@
+.side {
+  width: 30%;
+  min-width: 180px;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+button {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 0.6rem;
+}
+
+.course {
+  -moz-transition: height 1s ease;
+  -webkit-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+}
+
+.course label {
+  cursor: pointer;
+  position: relative;
+}

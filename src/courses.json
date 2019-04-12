@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Cursus 1",
+    "steps": [
+      { "name": "Basispas", "length": 6, "selected": true },
+      { "name": "Achterlangs", "length": 6 },
+      { "name": "Blok", "length": 6 },
+      { "name": "Oversteek", "length": 6 },
+      { "name": "Solo", "length": 6 },
+      { "name": "InUit", "length": 6 },
+      { "name": "Gekruist Block", "length": 6 },
+      { "name": "Voorlangs", "length": 6 },
+      { "name": "Inrol", "length": 6 },
+      { "name": "Twist", "length": 6 },
+      { "name": "Toupie", "length": 6 },
+      { "name": "Sjaal", "length": 6 },
+      { "name": "Gekruiste Inrol Uit", "length": 6 },
+      { "name": "Passage Hoog Uit", "length": 6 },
+      { "name": "Zweepslag", "length": 6 },
+      { "name": "Ketting", "length": 6 }
+    ]
+  },
+  {
+    "name": "Cursus 2",
+    "steps": [
+      { "name": "Gekruiste Inrol Halve Draai", "length": 6 },
+      { "name": "Dubbel Voorlangs", "length": 6 },
+      { "name": "Inrol Halve Draai", "length": 6 },
+      { "name": "Jojo", "length": 6 },
+      { "name": "Espagnol", "length": 6 },
+      { "name": "Passage Stand Solo", "length": 6 },
+      { "name": "Passage Stand Ketting", "length": 6 },
+      { "name": "Passage Stand Gekruiste Inrol", "length": 6 },
+      { "name": "Passage Stand Gekruiste Sjaal", "length": 6 },
+      { "name": "In Halve Draai", "length": 6 },
+      { "name": "Koentje", "length": 6 },
+      { "name": "Kurketrekker", "length": 6 },
+      { "name": "Frisbee", "length": 6 },
+      { "name": "Lijnwissel (3 stuks)", "length": 6 }
+    ]
+  },
+  {
+    "name": "Cursus 3",
+    "steps": [
+      { "name": "In Uit 10", "length": 6 },
+      { "name": "In Uit 10 Halve Draai", "length": 6 },
+      { "name": "Block 10", "length": 6 },
+      { "name": "Passage 10", "length": 6 },
+      { "name": "Kaats 10", "length": 6 },
+      { "name": "Passage Draai Heer", "length": 6 },
+      { "name": "In Halve Draai Direct Uit", "length": 6 },
+      { "name": "Triple", "length": 6 },
+      { "name": "Triple Jojo", "length": 6 },
+      { "name": "Triple Variaties", "length": 6 },
+      { "name": "Bump", "length": 6 },
+      { "name": "Clandestien Special", "length": 6 },
+      { "name": "Flip", "length": 6 },
+      { "name": "Spin", "length": 6 },
+      { "name": "Molenwiek", "length": 6 },
+      { "name": "Knip", "length": 6 },
+      { "name": "Valheer", "length": 6 }
+    ]
+  }
+]

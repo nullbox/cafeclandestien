@@ -1,0 +1,26 @@
+<div.side>
+  <label>BPM</label>
+  <if(state.playing)><button.button-outline on-click('stop')>Stop</button></if>
+  <if(!state.playing)><button.button-outline on-click('start')>Start</button></if>
+  <button class=(state.bpm !== 750 && 'button-outline') on-click('speed', 750)>80 bpm</button>
+  <button class=(state.bpm !== 600 && 'button-outline') on-click('speed', 600)>100 bpm</button>
+  <button class=(state.bpm !== 500 && 'button-outline') on-click('speed', 500)>120 bpm</button>
+  <button class=(state.bpm !== 428 && 'button-outline') on-click('speed', 428)>140 bpm</button>
+  <button class=(!state.countIn && 'button-outline') on-click('toggle', 'countIn', !state.countIn)>Count in</button>
+  <button class=(!state.random && 'button-outline') on-click('toggle', 'random', !state.random)>Random</button>
+  <button class=(!state.e2nd && 'button-outline') on-click('toggle', 'e2nd', !state.e2nd)>Every 2nd</button>
+  <div.course for(course in state.courses) class=(course.expanded && 'expanded')>
+    <label on-click('expand', course)>${course.name}</label>
+    <if(course.expanded)>
+      <button for(step in course.steps)
+        on-click('select', step)
+        class=(!step.selected && 'button-outline')>
+        ${step.name}
+      </button>
+    </if>
+  </div>
+</div>
+<div.step>
+  <h1>${state.append}</h1>
+  <h1>${state.step}</h1>
+</div>
